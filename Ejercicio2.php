@@ -24,19 +24,26 @@ mensaje de error por ejemplo, al introducir “-3” y seleccionar “factorial�
     
     function Sumatorio(int $num) : int{
         $sumatorio=0;
+        if($num<=0){
+         echo "<p>El número introducido no es valido, por favor inténtelo de nuevo.<p>";
+        }
         for($i=0;$i<=$num;$i++){
             $sumatorio+=$i;
         }
+    
         return $sumatorio;
     }
     function Factorial(int $num) : int{
-        $factorialo=1;
+        $factorial=1;
+        if($num<=0){
+            echo "<p>El número introducido no es valido, por favor inténtelo de nuevo.<p>";
+           }
         for($i=1;$i<=$num;$i++){
-            $sumatorio*=$i;
+            $factorial*=$i;
         }
         return $factorial;
     }
-
+    //no supe como hacer para que no me salgan el 0 o el 1  :( , después si puedo lo repaso
 
     ?>
     
