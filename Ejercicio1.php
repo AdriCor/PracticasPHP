@@ -21,24 +21,24 @@ función anteriormente creada
     </h2>
     <?php
      function cambiarDivisa(float $dinero, string $tipoDivisa, string $divisaCambio) : float{
-        var $res;
+        $res="";
         if($tipoDivisa=="Euros" && $divisaCambio=="Dolares"){
             $res=$dinero*1.06;
-        }elsif($tipoDivisa=="Euros" && $divisaCambio=="Yenes"){
+        }else if($tipoDivisa=="Euros" && $divisaCambio=="Yenes"){
             $res=$dinero*157.56;
-        }elsif($tipoDivisa=="Dolares" && $divisaCambio=="Euros"){
+        }else if($tipoDivisa=="Dolares" && $divisaCambio=="Euros"){
             $res=$dinero*0.94;
-        }elsif($tipoDivisa=="Dolares" && $divisaCambio=="Yenes"){
+        }else if($tipoDivisa=="Dolares" && $divisaCambio=="Yenes"){
             $res=$dinero*148.73;
-        }elsif($tipoDivisa=="Yenes" && $divisaCambio=="Euros"){
+        }else if($tipoDivisa=="Yenes" && $divisaCambio=="Euros"){
             $res=$dinero*0.0063;
-        }elsif($tipoDivisa=="Yenes" && $divisaCambio=="Dolares"){
+        }else if($tipoDivisa=="Yenes" && $divisaCambio=="Dolares"){
             $res=$dinero*0.0067;
         }
         return $res;
     }
-    
     ?>
+ 
 
 
 
